@@ -44,6 +44,8 @@ namespace ClassesLibrary
             Id = id;
             Gpa = gpa;
         }
+
+        public Student() { }
         //money / methods
         public override string ToString()
         {
