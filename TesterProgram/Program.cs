@@ -52,7 +52,22 @@ namespace TesterProgram
 
             Console.WriteLine($"The Password for user {l1.Username} is {l1.Password}...\n");
 
-          
+            Console.WriteLine($" ** Address Book **\n");
+
+            ContactInfo c1 = new ContactInfo();
+            c1.StreetAddress = "123 N Baker Street";
+            c1.City = "Tulsa";
+            c1.State = "Oklahoma";
+            c1.Zip = "74008";
+            c1.Phone = "555-236-4896";
+            c1.Email = "Emailme24@outlook.com";
+
+            ContactInfo c2 = new ContactInfo("58 Applepie Lane","Sweethills","Candyland","12345","555-888-7401","PattheBaker@Candyland.org");
+
+            Console.WriteLine(c2);
+
+            Console.WriteLine($"\nPlease come visit us at {c1.StreetAddress}! Located in {c1.City},{c1.State},{c1.Zip}!\n" +
+                $"You can also call us at {c1.Phone}! or even Email your questions to {c1.Email}");
         }
     }
 }
