@@ -40,6 +40,19 @@ namespace TesterProgram
 
             Console.WriteLine(v2);
 
+            Console.WriteLine("\n\n*** User Login Info ***\n\n");
+
+            Login l1 = new Login();
+            l1.Username = "TinyTim12";
+            l1.Password = "@appl3S@uc3";
+
+            Login l2 = new Login("DarkGhostXLR", "Bl@deStorm1989!?");
+
+            Console.WriteLine(l2);
+
+            Console.WriteLine($"The Password for user {l1.Username} is {l1.Password}...\n");
+
+          
         }
     }
 }
