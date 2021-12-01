@@ -3,8 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.1684
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSF2Homework", "CSF2Homework\CSF2Homework.csproj", "{41DFE76C-583F-45B3-84CD-EDB486C06B40}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassesLibrary", "ClassesLibrary\ClassesLibrary.csproj", "{6E4441DD-E873-47BA-B9ED-BBE527828ABD}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TesterProgram", "TesterProgram\TesterProgram.csproj", "{CB9D875E-A4DF-45B7-ADD1-F06C6029CE61}"
@@ -15,10 +13,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{41DFE76C-583F-45B3-84CD-EDB486C06B40}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{41DFE76C-583F-45B3-84CD-EDB486C06B40}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{41DFE76C-583F-45B3-84CD-EDB486C06B40}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{41DFE76C-583F-45B3-84CD-EDB486C06B40}.Release|Any CPU.Build.0 = Release|Any CPU
 		{6E4441DD-E873-47BA-B9ED-BBE527828ABD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{6E4441DD-E873-47BA-B9ED-BBE527828ABD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6E4441DD-E873-47BA-B9ED-BBE527828ABD}.Release|Any CPU.ActiveCfg = Release|Any CPU

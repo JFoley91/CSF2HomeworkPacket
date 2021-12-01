@@ -54,10 +54,6 @@
       <Project>{6e4441dd-e873-47ba-b9ed-bbe527828abd}</Project>
       <Name>ClassesLibrary</Name>
     </ProjectReference>
-    <ProjectReference Include="..\CSF2Homework\CSF2Homework.csproj">
-      <Project>{41dfe76c-583f-45b3-84cd-edb486c06b40}</Project>
-      <Name>CSF2Homework</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
