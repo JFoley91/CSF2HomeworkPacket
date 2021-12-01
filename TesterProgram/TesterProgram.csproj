@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{41DFE76C-583F-45B3-84CD-EDB486C06B40}</ProjectGuid>
+    <ProjectGuid>{CB9D875E-A4DF-45B7-ADD1-F06C6029CE61}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>CSF2Homework</RootNamespace>
-    <AssemblyName>CSF2Homework</AssemblyName>
+    <RootNamespace>TesterProgram</RootNamespace>
+    <AssemblyName>TesterProgram</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -53,6 +53,10 @@
     <ProjectReference Include="..\ClassesLibrary\ClassesLibrary.csproj">
       <Project>{6e4441dd-e873-47ba-b9ed-bbe527828abd}</Project>
       <Name>ClassesLibrary</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CSF2Homework\CSF2Homework.csproj">
+      <Project>{41dfe76c-583f-45b3-84cd-edb486c06b40}</Project>
+      <Name>CSF2Homework</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
