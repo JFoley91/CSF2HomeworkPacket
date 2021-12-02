@@ -100,6 +100,18 @@ namespace TesterProgram
 
             Book bk2 = new Book("Star Wars: DeathTroopers", "Joe Schireiber", 288);
             Console.WriteLine(bk2 + "\n");
+            Console.Clear();
+
+            List<Book> booksOnHand = new List<Book>() { bk1, bk2 };
+            booksOnHand.RemoveAt(0);
+
+            Library upTown = new Library(booksOnHand,"UpState Public Library", "123 Uptown St","Nowhere","Texas","12345");
+            Console.WriteLine(upTown);
+
+            Library downState = new Library(booksOnHand, "Down Here Library", "4563 Trash Lane", "Gutterton", "Trashlantis", "4785");
+            booksOnHand.Add(bk1);
+            booksOnHand.RemoveAt(1);
+            Console.WriteLine(downState);
         }
     }
 }
