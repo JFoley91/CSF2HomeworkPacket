@@ -68,6 +68,20 @@ namespace TesterProgram
 
             Console.WriteLine($"\nPlease come visit us at {c1.StreetAddress}! Located in {c1.City},{c1.State},{c1.Zip}!\n" +
                 $"You can also call us at {c1.Phone}! or even Email your questions to {c1.Email}");
+
+            List<ContactInfo> contactInfo = new List<ContactInfo>();
+            contactInfo.Add(c1);
+            contactInfo.Add(c2);
+            contactInfo.RemoveAt(1);
+
+            Customer cr1 = new Customer("1111111", "Jeffery", "Shoemaker", contactInfo);
+
+            Console.WriteLine(cr1);
+          
+            Customer cr2 = new Customer("2222222", "Pat", "Baker", contactInfo);
+            contactInfo.Add(c2);
+            contactInfo.RemoveAt(0);
+            Console.WriteLine(cr2);
         }
     }
 }
