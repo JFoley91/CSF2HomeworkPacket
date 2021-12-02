@@ -92,6 +92,14 @@ namespace TesterProgram
             contactInfo.RemoveAt(0);
             CreditCardAccount creditAccount2 = new CreditCardAccount(454566, cr2, 2500.50m, true, 3.5m);
             Console.WriteLine(creditAccount2 + "%\n");
+
+            Console.Clear();
+            Console.ForegroundColor = ConsoleColor.DarkRed;
+            Book bk1 = new Book("How to be a DPS", "Sir Tyler", 150);
+            Console.WriteLine(bk1 + "\n");
+
+            Book bk2 = new Book("Star Wars: DeathTroopers", "Joe Schireiber", 288);
+            Console.WriteLine(bk2 + "\n");
         }
     }
 }
