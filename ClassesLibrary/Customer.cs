@@ -14,10 +14,10 @@ namespace ClassesLibrary
         public string CustomerID { get; set; }
         public string FirstName { get; set; }
         public string LastName { get; set; }
-        public List<ContactInfo> ContactInfo { get; set; }
+        public ContactInfo ContactInfo { get; set; }
 
         //collect / constructors (ctors)
-        public Customer(string customerID, string firstName, string lastName, List<ContactInfo> contactInfo)
+        public Customer(string customerID, string firstName, string lastName, ContactInfo contactInfo)
         {
             CustomerID = customerID;
             FirstName = firstName;
@@ -29,16 +29,10 @@ namespace ClassesLibrary
 
         public override string ToString()
         {
-            string customerInfo = "";
-
-            foreach (ContactInfo c in ContactInfo)
-            {
-                customerInfo += c + "\n";
-            }//end foreach
 
             return $"\nCustomer Name: {FirstName} {LastName}\n" +
                 $"Customer ID:\n{CustomerID}\n" +
-                $"Contact Info:\n{customerInfo}\n";
+                $"Contact Info:\n{ContactInfo}\n";
         }
     }
 }

@@ -68,20 +68,30 @@ namespace TesterProgram
 
             Console.WriteLine($"\nPlease come visit us at {c1.StreetAddress}! Located in {c1.City},{c1.State},{c1.Zip}!\n" +
                 $"You can also call us at {c1.Phone}! or even Email your questions to {c1.Email}");
-
+            Console.Clear();
             List<ContactInfo> contactInfo = new List<ContactInfo>();
             contactInfo.Add(c1);
             contactInfo.Add(c2);
             contactInfo.RemoveAt(1);
 
-            Customer cr1 = new Customer("1111111", "Jeffery", "Shoemaker", contactInfo);
+            Customer cr1 = new Customer("1111111", "Jeffery", "Shoemaker", c1);
 
             Console.WriteLine(cr1);
           
-            Customer cr2 = new Customer("2222222", "Pat", "Baker", contactInfo);
+            Customer cr2 = new Customer("2222222", "Pat", "Baker", c2);
             contactInfo.Add(c2);
             contactInfo.RemoveAt(0);
             Console.WriteLine(cr2);
+
+            contactInfo.Add(c1);
+            contactInfo.RemoveAt(1);
+            CreditCardAccount creditAccount1 = new CreditCardAccount(123123, cr1, 500.25m, false, 2.5m);           
+            Console.WriteLine(creditAccount1 + "%\n");
+
+            contactInfo.Add(c2);
+            contactInfo.RemoveAt(0);
+            CreditCardAccount creditAccount2 = new CreditCardAccount(454566, cr2, 2500.50m, true, 3.5m);
+            Console.WriteLine(creditAccount2 + "%\n");
         }
     }
 }
